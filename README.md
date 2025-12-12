@@ -67,4 +67,4 @@ This project is built using a modern React ecosystem:
 *   `npm run preview`: Previews the production build locally.
 
 ---
-Built with ❤️ using Lovable and React.
+Built with ❤️ using React.
