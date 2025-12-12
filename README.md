@@ -1,7 +1,7 @@
 # Zest Car Care Flow
 
 Zest Car Care Flow is a comprehensive vehicle and garage management application designed to streamline the interaction between vehicle owners and service providers. It offers a dual-interface system: one for car owners to manage their vehicles and expenses, and another for garage owners to manage their business operations.
-
+**ZEST CAR CARE WEBSITE**: [Website](https://carcare-bf799.web.app/)
 ## Features
 
 ### For Vehicle Owners
@@ -42,7 +42,7 @@ This project is built using a modern React ecosystem:
 
 1.  **Clone the repository**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/krrishitejas/Zest-Ai-1
     cd zest-car-care-flow-main
     ```
 
