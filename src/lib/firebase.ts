@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA_zLu6m8FVooesdhGeN6Af7zAsOl3j0Eo",
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || "",
     authDomain: "carcare-bf799.firebaseapp.com",
     projectId: "carcare-bf799",
     storageBucket: "carcare-bf799.firebasestorage.app",
