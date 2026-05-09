@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 // Initialize Gemini API
 // Note: In a production app, this key should be in an environment variable
 // and calls should ideally be proxied through a backend to keep the key secure.
-const API_KEY = "AIzaSyC7jU_-r3y4l7bzvK446VuPaQN5dWUrPmg";
+const API_KEY = process.env.GEMINI_API_KEY || "AIzaSyC7jU_-r3y4l7bzvK446VuPaQN5dWUrPmg";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export interface ReceiptData {
@@ -39,7 +39,7 @@ export const analyzeReceipt = async (imageFile: File): Promise<ReceiptData> => {
         const text = response.text();
 
         // Clean up the response to ensure it's valid JSON
-        const jsonString = text.replace(/```json/g, "").replace(/```/g, "").trim();
+        const jsonString = text.replace(//g, "").replace(//g, "").trim();
 
         try {
             const data = JSON.parse(jsonString);
